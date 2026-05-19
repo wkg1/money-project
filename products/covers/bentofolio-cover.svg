@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <linearGradient id="bfbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="50%" style="stop-color:#13131a"/>
+      <stop offset="100%" style="stop-color:#1a1020"/>
+    </linearGradient>
+    <linearGradient id="bfgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#e84393"/>
+    </linearGradient>
+    <filter id="bfglow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bfbg)"/>
+
+  <!-- Bento grid preview -->
+  <g transform="translate(140,440)" opacity="0.15">
+    <rect x="0" y="0" width="230" height="120" rx="12" fill="#6366f1"/>
+    <rect x="240" y="0" width="160" height="120" rx="12" fill="#e84393"/>
+    <rect x="410" y="0" width="150" height="120" rx="12" fill="#6366f1"/>
+    <rect x="0" y="130" width="150" height="120" rx="12" fill="#e84393"/>
+    <rect x="160" y="130" width="240" height="120" rx="12" fill="#6366f1"/>
+    <rect x="410" y="130" width="150" height="120" rx="12" fill="#e84393"/>
+  </g>
+
+  <!-- Top accent -->
+  <rect x="200" y="60" width="400" height="2" rx="1" fill="url(#bfgrad)" opacity="0.6"/>
+
+  <!-- Icon -->
+  <g transform="translate(400,160)" filter="url(#bfglow)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="url(#bfgrad)" stroke-width="2"/>
+    <text x="0" y="10" text-anchor="middle" font-size="38" font-family="sans-serif">🎨</text>
+  </g>
+
+  <!-- Tag -->
+  <text x="400" y="245" text-anchor="middle" font-size="14" fill="#a78bfa" font-family="sans-serif" letter-spacing="5" font-weight="600">PREMIUM PORTFOLIO TEMPLATE</text>
+
+  <!-- Title -->
+  <text x="400" y="340" text-anchor="middle" font-size="52" fill="url(#bfgrad)" font-family="Georgia,serif" font-weight="bold">
+    <tspan x="400" dy="0">BentoFolio</tspan>
+  </text>
+
+  <rect x="280" y="370" width="240" height="1.5" fill="url(#bfgrad)" opacity="0.5"/>
+
+  <text x="400" y="420" text-anchor="middle" font-size="20" fill="#a78bfa" font-family="Georgia,serif" font-style="italic">
+    Bento Grid Portfolio
+  </text>
+
+  <!-- Preview box -->
+  <rect x="200" y="480" width="400" height="130" rx="14" fill="#1a1a24" stroke="#333" stroke-width="1"/>
+  <rect x="220" y="495" width="170" height="55" rx="8" fill="#6366f1" opacity="0.3"/>
+  <rect x="400" y="495" width="180" height="55" rx="8" fill="#e84393" opacity="0.3"/>
+  <rect x="220" y="562" width="110" height="36" rx="8" fill="#e84393" opacity="0.2"/>
+  <rect x="340" y="562" width="240" height="36" rx="8" fill="#6366f1" opacity="0.2"/>
+
+  <!-- Bottom -->
+  <rect x="200" y="660" width="400" height="1.5" fill="url(#bfgrad)" opacity="0.5"/>
+
+  <text x="400" y="705" text-anchor="middle" font-size="14" fill="#a78bfa" font-family="sans-serif" letter-spacing="3">INSTANT DOWNLOAD • LIFETIME UPDATES</text>
+  <text x="400" y="735" text-anchor="middle" font-size="12" fill="#6b6b80" font-family="sans-serif">DigitalCraft © 2026</text>
+
+  <circle cx="370" cy="770" r="2" fill="#6366f1" opacity="0.4"/>
+  <circle cx="385" cy="770" r="2" fill="#6366f1" opacity="0.6"/>
+  <circle cx="400" cy="770" r="2" fill="#6366f1" opacity="0.8"/>
+  <circle cx="415" cy="770" r="2" fill="#6366f1" opacity="0.6"/>
+  <circle cx="430" cy="770" r="2" fill="#6366f1" opacity="0.4"/>
+</svg>
