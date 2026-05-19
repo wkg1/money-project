@@ -62,7 +62,7 @@ At your commission rate, what is 15 extra hours worth?
 **Tweet 7/7**
 I compiled all 50+ prompt systems into a pack called The AI-Powered Agent. Context checklists, engineered prompts, real example outputs, platform guides for both ChatGPT and Claude.
 
-If you want to stop writing and start selling: [digitalcraft.co](https://digitalcraft.co)
+If you want to stop writing and start selling: [wkg1.github.io/money-project](https://wkg1.github.io/money-project)
 
 ---
 
@@ -131,7 +131,7 @@ ADHD brains do not need more. They need less friction and more reward.
 **Tweet 8/8**
 I turned this into a Notion template called FocusFlow. Minimalist 3-database system designed specifically for neurodivergent minds.
 
-If traditional productivity tools have failed you: [digitalcraft.co](https://digitalcraft.co)
+If traditional productivity tools have failed you: [wkg1.github.io/money-project](https://wkg1.github.io/money-project)
 
 And if you want the principles for free: capture in under 3 seconds, 3 tasks per day max, track wins not failures.
 
@@ -191,6 +191,6 @@ I built a BentoFolio template that follows all 6 patterns:
 - Contact CTA card
 - Pure HTML/CSS, zero dependencies, responsive
 
-Grab it at [digitalcraft.co](https://digitalcraft.co) for $24.
+Grab it at [wkg1.github.io/money-project](https://wkg1.github.io/money-project) for $24.
 
 Or use the patterns above to build your own. Either way, your portfolio should not look like it was built in 2018.

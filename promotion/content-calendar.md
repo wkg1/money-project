@@ -39,7 +39,7 @@
 | 8 (Mon) | LinkedIn | Text post | "75% of resumes are rejected before a human sees them. I built a free tool to fix that." — 3 bullet points on what RL checks, CTA to try it free | RL |
 | 9 (Tue) | TikTok/Reels | Short video | Script 3: "Upload your resume -> Get instant ATS score" (25-30 sec, product demo format) | RL |
 | 9 (Tue) | Pinterest | 3 pins | Publish pins 4.1, 4.2, 4.3 (ATS score reveal, before/after, privacy-first messaging) | RL |
-| 10 (Wed) | Reddit (r/freelance) | Value post | "5 digital products you can create and sell this weekend" — value post covering RE, FF, BF, RL, Startup Pack. Soft-promote digitalcraft.co | All |
+| 10 (Wed) | Reddit (r/freelance) | Value post | "5 digital products you can create and sell this weekend" — value post covering RE, FF, BF, RL, Startup Pack. Soft-promote wkg1.github.io/money-project | All |
 | 10 (Wed) | Twitter/X | Short thread | "5 digital products you can build and sell this weekend (no audience needed)" — condensed version of r/freelance post (5 tweets) | All |
 | 11 (Thu) | Instagram | Reel | "3 AI tools every real estate agent needs in 2026" — quick 15-sec rundown: AI prompts for listings, AI for market analysis, AI for social content. Link in bio to RE | RE |
 | 11 (Thu) | Pinterest | 3 pins | Publish pins 1.4, 1.5, 2.4 (ROI calculation for RE, platform compatibility for RE, brain dump feature for FF) | RE, FF |
@@ -83,14 +83,14 @@
 | 24 (Wed) | TikTok/Reels | Short video | "ADHD dopamine tracker weekly review ASMR" — calming screen recording scrolling through a colorful week of completed tasks. Text overlay: "4 months. Not abandoned. First time ever." | FF |
 | 25 (Thu) | Twitter/X | Thread (repost) | Repost Thread 3 (developer portfolios) — new audience, updated engagement | BF |
 | 25 (Thu) | Pinterest | 2 pins | Publish pins 1.4, 2.2 (re-pin top performers from Week 1-2 with fresh descriptions and keywords) | RE, FF |
-| 26 (Fri) | Reddit (r/Entrepreneur) | Value post | "Digital product revenue report: Month 1 numbers from selling Notion templates and AI prompts" — transparent income report, build trust, mention all products at digitalcraft.co | All |
-| 26 (Fri) | All social | Cross-platform push | "This weekend only: 20% off all products at digitalcraft.co with code LAUNCH20" — single coordinated promotion across Twitter, LinkedIn, Instagram story, Reddit profile post | All |
+| 26 (Fri) | Reddit (r/Entrepreneur) | Value post | "Digital product revenue report: Month 1 numbers from selling Notion templates and AI prompts" — transparent income report, build trust, mention all products at wkg1.github.io/money-project | All |
+| 26 (Fri) | All social | Cross-platform push | "This weekend only: 20% off all products at wkg1.github.io/money-project with code LAUNCH20" — single coordinated promotion across Twitter, LinkedIn, Instagram story, Reddit profile post | All |
 | 27 (Sat) | Instagram + TikTok | Reminder story/reel | "24 hours left for the 20% launch discount. Code LAUNCH20" — urgency post | All |
 | 27 (Sat) | Email (if list exists) | Newsletter | "Our full product suite is live — here's everything we launched this month + 20% off code (expires tomorrow)" | All |
-| 28 (Sun) | All platforms | Final push | "Last day: 20% off with code LAUNCH20 at digitalcraft.co" — final urgency post across all platforms. Reply to any remaining comments from the month. | All |
+| 28 (Sun) | All platforms | Final push | "Last day: 20% off with code LAUNCH20 at wkg1.github.io/money-project" — final urgency post across all platforms. Reply to any remaining comments from the month. | All |
 | 29 (Mon) | Reddit (r/SideProject) | Follow-up post | "Month 1 results from my resume analyzer side project — traffic, conversions, lessons learned" — transparent retrospective, builds credibility | RL |
-| 29 (Mon) | LinkedIn | Article | "What 30 days of building in public taught me about selling digital products" — monthly retrospective, mention all products, soft-promote digitalcraft.co | All |
-| 30 (Tue) | All platforms | Recap + Plan | "Here's what launched this month at digitalcraft.co: [list 5 products with one-liners]. Coming next month: [tease future products]. Follow to stay updated." | All |
+| 29 (Mon) | LinkedIn | Article | "What 30 days of building in public taught me about selling digital products" — monthly retrospective, mention all products, soft-promote wkg1.github.io/money-project | All |
+| 30 (Tue) | All platforms | Recap + Plan | "Here's what launched this month at wkg1.github.io/money-project: [list 5 products with one-liners]. Coming next month: [tease future products]. Follow to stay updated." | All |
 | 30 (Tue) | Pinterest | 3 pins | Final batch: re-pin the 3 best-performing pins from the month across all products. Update descriptions with fresh keywords. | Top 3 |
 
 ---

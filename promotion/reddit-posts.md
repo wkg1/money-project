@@ -34,7 +34,7 @@ The key insight: writing a good prompt takes as much skill as writing the listin
 
 I actually compiled my full system of 50+ real estate-specific prompts (listing descriptions by property type, market analysis narratives, email drip campaigns, social media content calendars, CMA summaries, open house scripts, objection handling, FAQ automation, neighborhood guides, video tour scripts) into a pack. Each one has the context checklist, the engineered prompt, when to use it, and a real example output so you can see what you will get before you even paste it in.
 
-If anyone wants to check it out, it is at [digitalcraft.co](https://digitalcraft.co) under "The AI-Powered Agent." But honestly, even just the framework above — context + role + constraints — will get you 80% of the way there. Happy to answer questions in the comments.
+If anyone wants to check it out, it is at [wkg1.github.io/money-project](https://wkg1.github.io/money-project) under "The AI-Powered Agent." But honestly, even just the framework above — context + role + constraints — will get you 80% of the way there. Happy to answer questions in the comments.
 
 ---
 
@@ -75,7 +75,7 @@ I built this in Notion (because I was already using it) but stripped everything 
 
 It has now been 4 months. This is the longest I have stuck with any system in my entire adult life. The key was not more features or better discipline — it was less friction and more reward.
 
-I ended up turning this into a template called FocusFlow because a few friends with ADHD asked me to share it. It is a minimalist 3-database Notion system at [digitalcraft.co](https://digitalcraft.co). But honestly, the principles are free: capture in under 3 seconds, only 3 tasks per day, track wins not failures. That alone changed everything for me.
+I ended up turning this into a template called FocusFlow because a few friends with ADHD asked me to share it. It is a minimalist 3-database Notion system at [wkg1.github.io/money-project](https://wkg1.github.io/money-project). But honestly, the principles are free: capture in under 3 seconds, only 3 tasks per day, track wins not failures. That alone changed everything for me.
 
 ---
 
@@ -96,7 +96,7 @@ Hey everyone. I have been experimenting with Bento Grid layouts lately (the Appl
 - Hover states and subtle animations on cards
 
 **Live demo & code:**
-You can grab it at [digitalcraft.co](https://digitalcraft.co) — look for BentoFolio. It comes as a single index.html file that you can open and start editing immediately. I am selling it for $24 (one-time) if you want the full version with 5 color scheme variations and a documentation guide, but honestly the basic structure is simple enough that you can inspect the code and build your own.
+You can grab it at [wkg1.github.io/money-project](https://wkg1.github.io/money-project) — look for BentoFolio. It comes as a single index.html file that you can open and start editing immediately. I am selling it for $24 (one-time) if you want the full version with 5 color scheme variations and a documentation guide, but honestly the basic structure is simple enough that you can inspect the code and build your own.
 
 **Why Bento Grid:**
 Bento layouts have become the dominant portfolio design pattern in 2025-2026 because they solve a real problem: showing a lot of information (projects, skills, experience, personality) without overwhelming the viewer. Each card is a self-contained idea. The grid creates natural visual hierarchy — bigger cards draw attention, smaller cards create rhythm.
@@ -150,7 +150,7 @@ Deployed on Netlify in about 60 seconds. Drag the HTML file to Netlify Drop and 
 - The hardest part was the keyword database — I compiled 100+ industry keywords manually from job descriptions across 8 fields
 - ATS systems are remarkably predictable in what they flag: missing contact info, non-standard section headings, inconsistent date formats, lack of quantifiable achievements
 
-**Link:** [digitalcraft.co](https://digitalcraft.co) — look for ResumeLab. You can upload your resume and get a free score immediately. No email required.
+**Link:** [wkg1.github.io/money-project](https://wkg1.github.io/money-project) — look for ResumeLab. You can upload your resume and get a free score immediately. No email required.
 
 Would love feedback from anyone who works in recruiting or has experience with ATS systems. I am sure my scoring logic could be improved.
 
@@ -184,4 +184,4 @@ An all-in-one system for small teams: project management, finance tracker, CRM, 
 **The math:**
 Even at conservative numbers — 30-50 sales per month per product at $24-$47 each — you are looking at $1,000-$2,000/month in mostly passive income. Build 3-4 products across different niches and that compounds.
 
-If you want to see examples of any of these, I have a few live at [digitalcraft.co](https://digitalcraft.co). But the real point is: pick a niche you understand, solve a specific problem for a specific person, price between $24-$47, and list it. The bar for "good enough to sell" is lower than you think.
+If you want to see examples of any of these, I have a few live at [wkg1.github.io/money-project](https://wkg1.github.io/money-project). But the real point is: pick a niche you understand, solve a specific problem for a specific person, price between $24-$47, and list it. The bar for "good enough to sell" is lower than you think.

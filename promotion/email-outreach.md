@@ -33,7 +33,7 @@ Best,
 [Your Name]
 DigitalCraft
 [your email]
-[digitalcraft.co](https://digitalcraft.co)
+[wkg1.github.io/money-project](https://wkg1.github.io/money-project)
 
 ---
 
@@ -69,7 +69,7 @@ Best,
 [Your Name]
 DigitalCraft
 [your email]
-[digitalcraft.co](https://digitalcraft.co)
+[wkg1.github.io/money-project](https://wkg1.github.io/money-project)
 
 ---
 
@@ -110,4 +110,4 @@ Best,
 [Your Name]
 DigitalCraft
 [your email]
-[digitalcraft.co](https://digitalcraft.co)
+[wkg1.github.io/money-project](https://wkg1.github.io/money-project)

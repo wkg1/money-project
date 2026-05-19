@@ -16,7 +16,7 @@
 
 **Target keywords:** real estate marketing, real estate agent tips, ChatGPT for real estate, listing description templates, AI tools for realtors, real estate copywriting, agent productivity
 
-**Destination URL:** https://digitalcraft.co (AI-Powered Agent product)
+**Destination URL:** https://wkg1.github.io/money-project (AI-Powered Agent product)
 
 ---
 
@@ -30,7 +30,7 @@
 
 **Target keywords:** AI prompts for real estate, real estate content ideas, ChatGPT prompts for agents, real estate social media content, listing marketing ideas, real estate automation
 
-**Destination URL:** https://digitalcraft.co (AI-Powered Agent product)
+**Destination URL:** https://wkg1.github.io/money-project (AI-Powered Agent product)
 
 ---
 
@@ -44,7 +44,7 @@
 
 **Target keywords:** luxury real estate marketing, real estate listing description examples, professional listing copy, real estate copywriting examples, AI writing quality, premium real estate content
 
-**Destination URL:** https://digitalcraft.co (AI-Powered Agent product)
+**Destination URL:** https://wkg1.github.io/money-project (AI-Powered Agent product)
 
 ---
 
@@ -58,7 +58,7 @@
 
 **Target keywords:** real estate business tips, real estate agent tools, agent time management, real estate ROI, productivity for realtors, real estate business systems
 
-**Destination URL:** https://digitalcraft.co (AI-Powered Agent product)
+**Destination URL:** https://wkg1.github.io/money-project (AI-Powered Agent product)
 
 ---
 
@@ -72,7 +72,7 @@
 
 **Target keywords:** ChatGPT for business, Claude AI prompts, AI tools comparison, best AI for real estate, ChatGPT vs Claude, AI assistant for realtors
 
-**Destination URL:** https://digitalcraft.co (AI-Powered Agent product)
+**Destination URL:** https://wkg1.github.io/money-project (AI-Powered Agent product)
 
 ---
 
@@ -90,7 +90,7 @@
 
 **Target keywords:** ADHD productivity, ADHD planner, neurodivergent tools, ADHD Notion template, ADHD organization, executive dysfunction help, ADHD-friendly planner
 
-**Destination URL:** https://digitalcraft.co (FocusFlow product)
+**Destination URL:** https://wkg1.github.io/money-project (FocusFlow product)
 
 ---
 
@@ -104,7 +104,7 @@
 
 **Target keywords:** ADHD struggles, productivity system ADHD, why planners don't work for ADHD, ADHD brain tips, productivity apps ADHD, ADHD executive dysfunction tips
 
-**Destination URL:** https://digitalcraft.co (FocusFlow product)
+**Destination URL:** https://wkg1.github.io/money-project (FocusFlow product)
 
 ---
 
@@ -118,7 +118,7 @@
 
 **Target keywords:** ADHD dopamine, habit tracker ADHD, visual productivity tracker, ADHD habit building, dopamine reward system, ADHD motivation tips
 
-**Destination URL:** https://digitalcraft.co (FocusFlow product)
+**Destination URL:** https://wkg1.github.io/money-project (FocusFlow product)
 
 ---
 
@@ -132,7 +132,7 @@
 
 **Target keywords:** ADHD brain dump, adhd thought capture, working memory ADHD, ADHD note taking, ADHD organization system, quick capture tool ADHD
 
-**Destination URL:** https://digitalcraft.co (FocusFlow product)
+**Destination URL:** https://wkg1.github.io/money-project (FocusFlow product)
 
 ---
 
@@ -146,7 +146,7 @@
 
 **Target keywords:** easy Notion template, quick setup planner, ADHD-friendly setup, Notion for beginners, simple productivity system, ADHD organization made easy
 
-**Destination URL:** https://digitalcraft.co (FocusFlow product)
+**Destination URL:** https://wkg1.github.io/money-project (FocusFlow product)
 
 ---
 
@@ -164,7 +164,7 @@
 
 **Target keywords:** developer portfolio template, web developer portfolio, Bento grid portfolio, portfolio website template, frontend developer portfolio, HTML portfolio template, modern portfolio design
 
-**Destination URL:** https://digitalcraft.co (BentoFolio product)
+**Destination URL:** https://wkg1.github.io/money-project (BentoFolio product)
 
 ---
 
@@ -178,7 +178,7 @@
 
 **Target keywords:** responsive portfolio template, mobile-friendly portfolio, responsive web design, portfolio mobile view, responsive HTML template, cross-device portfolio
 
-**Destination URL:** https://digitalcraft.co (BentoFolio product)
+**Destination URL:** https://wkg1.github.io/money-project (BentoFolio product)
 
 ---
 
@@ -192,7 +192,7 @@
 
 **Target keywords:** dark theme portfolio, dark mode design, portfolio color palette, modern web design colors, dark UI design, CSS custom properties, developer color scheme
 
-**Destination URL:** https://digitalcraft.co (BentoFolio product)
+**Destination URL:** https://wkg1.github.io/money-project (BentoFolio product)
 
 ---
 
@@ -206,7 +206,7 @@
 
 **Target keywords:** Bento Grid CSS, CSS Grid layout, Bento design system, portfolio layout ideas, grid portfolio design, CSS Grid tutorial, web design layout patterns
 
-**Destination URL:** https://digitalcraft.co (BentoFolio product)
+**Destination URL:** https://wkg1.github.io/money-project (BentoFolio product)
 
 ---
 
@@ -220,7 +220,7 @@
 
 **Target keywords:** simple portfolio template, no-framework portfolio, static HTML portfolio, easy portfolio setup, deploy portfolio fast, no-dependency website template, clean code portfolio
 
-**Destination URL:** https://digitalcraft.co (BentoFolio product)
+**Destination URL:** https://wkg1.github.io/money-project (BentoFolio product)
 
 ---
 
@@ -238,7 +238,7 @@
 
 **Target keywords:** ATS resume checker, resume score tool, ATS compatibility test, free resume review, resume scanner, applicant tracking system tips, resume optimization
 
-**Destination URL:** https://digitalcraft.co (ResumeLab tool)
+**Destination URL:** https://wkg1.github.io/money-project (ResumeLab tool)
 
 ---
 
@@ -252,7 +252,7 @@
 
 **Target keywords:** improve resume score, resume before and after, optimize resume for ATS, resume fix tips, resume improvement tool, ATS optimization, get past ATS
 
-**Destination URL:** https://digitalcraft.co (ResumeLab tool)
+**Destination URL:** https://wkg1.github.io/money-project (ResumeLab tool)
 
 ---
 
@@ -266,7 +266,7 @@
 
 **Target keywords:** private resume checker, secure resume tool, resume privacy, no-signup resume tool, browser-based resume analyzer, confidential resume review
 
-**Destination URL:** https://digitalcraft.co (ResumeLab tool)
+**Destination URL:** https://wkg1.github.io/money-project (ResumeLab tool)
 
 ---
 
@@ -280,7 +280,7 @@
 
 **Target keywords:** resume keywords, industry keywords for resume, ATS keywords, action verbs resume, resume keyword optimization, recruiter keywords, resume skills list
 
-**Destination URL:** https://digitalcraft.co (ResumeLab tool)
+**Destination URL:** https://wkg1.github.io/money-project (ResumeLab tool)
 
 ---
 
@@ -294,7 +294,7 @@
 
 **Target keywords:** career center tools, resume help for students, university career services, job placement resources, career coach tools, student resume checker, graduate resume help
 
-**Destination URL:** https://digitalcraft.co (ResumeLab tool)
+**Destination URL:** https://wkg1.github.io/money-project (ResumeLab tool)
 
 ---
 
@@ -312,7 +312,7 @@
 
 **Target keywords:** ChatGPT prompts, best ChatGPT prompts, AI prompt templates, ChatGPT prompt pack, productivity prompts, ChatGPT for work, AI prompt library
 
-**Destination URL:** https://digitalcraft.co (ChatGPT Productivity Pack)
+**Destination URL:** https://wkg1.github.io/money-project (ChatGPT Productivity Pack)
 
 ---
 
@@ -326,7 +326,7 @@
 
 **Target keywords:** content creation prompts, social media AI prompts, blog writing ChatGPT, content creator tools, AI writing assistant, ChatGPT for marketing, AI content generation
 
-**Destination URL:** https://digitalcraft.co (ChatGPT Productivity Pack)
+**Destination URL:** https://wkg1.github.io/money-project (ChatGPT Productivity Pack)
 
 ---
 
@@ -340,7 +340,7 @@
 
 **Target keywords:** coding prompts ChatGPT, developer AI tools, ChatGPT for programmers, AI coding assistant, ChatGPT programming tips, software development AI, code generation prompts
 
-**Destination URL:** https://digitalcraft.co (ChatGPT Productivity Pack)
+**Destination URL:** https://wkg1.github.io/money-project (ChatGPT Productivity Pack)
 
 ---
 
@@ -354,7 +354,7 @@
 
 **Target keywords:** business prompts ChatGPT, entrepreneur AI tools, startup ChatGPT prompts, business strategy AI, ChatGPT for business owners, AI business consultant, small business ChatGPT
 
-**Destination URL:** https://digitalcraft.co (ChatGPT Productivity Pack)
+**Destination URL:** https://wkg1.github.io/money-project (ChatGPT Productivity Pack)
 
 ---
 
@@ -368,4 +368,4 @@
 
 **Target keywords:** ChatGPT tips and tricks, ChatGPT pro tips, how to use ChatGPT better, ChatGPT advanced guide, AI prompt engineering, ChatGPT tutorial, get better ChatGPT results
 
-**Destination URL:** https://digitalcraft.co (ChatGPT Productivity Pack)
+**Destination URL:** https://wkg1.github.io/money-project (ChatGPT Productivity Pack)
