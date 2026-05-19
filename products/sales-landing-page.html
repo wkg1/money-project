@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DigitalCraft — Premium Digital Products</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--bg:#fafafa;--card:#fff;--text:#1a1a2e;--muted:#64748b;--accent:#6366f1;--border:#e5e7eb}
+  body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .nav{max-width:1200px;margin:0 auto;padding:20px 24px;display:flex;justify-content:space-between;align-items:center}
+  .nav .logo{font-weight:800;font-size:1.2rem}
+  .nav a{color:var(--text);text-decoration:none;font-weight:600;font-size:14px}
+  .hero{text-align:center;padding:80px 24px 60px;max-width:720px;margin:0 auto}
+  .hero .badge{display:inline-block;padding:6px 16px;background:#eef2ff;color:var(--accent);border-radius:20px;font-size:13px;font-weight:600;margin-bottom:20px}
+  .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-1px;margin-bottom:16px}
+  .hero p{color:var(--muted);font-size:1.1rem;margin-bottom:32px}
+  .products{max-width:1100px;margin:0 auto;padding:0 24px 80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+  .product-card{background:var(--card);border-radius:16px;padding:32px;border:1px solid var(--border);transition:box-shadow 0.2s}
+  .product-card:hover{box-shadow:0 8px 30px rgba(0,0,0,0.08)}
+  .product-card .icon{font-size:2.5rem;margin-bottom:16px}
+  .product-card h3{font-size:1.25rem;margin-bottom:8px}
+  .product-card .desc{color:var(--muted);font-size:14px;margin-bottom:16px;min-height:60px}
+  .product-card .features{list-style:none;margin-bottom:20px}
+  .product-card .features li{font-size:13px;color:var(--muted);padding:3px 0}
+  .product-card .features li::before{content:"✓ ";color:#10b981;font-weight:700}
+  .product-card .price-row{display:flex;align-items:baseline;gap:8px;margin-bottom:16px}
+  .product-card .price{font-size:2rem;font-weight:800}
+  .product-card .old-price{font-size:1rem;color:var(--muted);text-decoration:line-through}
+  .btn{display:block;text-align:center;padding:12px 24px;background:var(--accent);color:#fff;border-radius:10px;font-weight:600;text-decoration:none;transition:opacity 0.2s}
+  .btn:hover{opacity:0.9}
+  .btn.ghost{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+  .footer{text-align:center;padding:40px 24px;color:var(--muted);font-size:13px;border-top:1px solid var(--border)}
+  .testimonial{max-width:800px;margin:0 auto 80px;text-align:center}
+  .testimonial q{font-size:1.3rem;font-style:italic;color:var(--muted)}
+  .testimonial .author{font-weight:600;margin-top:12px}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">DigitalCraft</div>
+  <a href="mailto:hello@digitalcraft.co">Contact</a>
+</nav>
+
+<section class="hero">
+  <div class="badge">🔥 New Products Added Weekly</div>
+  <h1>Premium Digital Products for Creators</h1>
+  <p>Notion templates, AI prompt packs, and website templates — crafted to save you time and level up your work.</p>
+</section>
+
+<section class="products">
+
+  <div class="product-card">
+    <div class="icon">📊</div>
+    <h3>创业公司管理全能包</h3>
+    <p class="desc">8合1 Notion 模板系统。项目管理、财务追踪、CRM、内容日历——一键复制即用。</p>
+    <ul class="features">
+      <li>8 个专业数据库模板</li>
+      <li>30+ 自动化视图与公式</li>
+      <li>视频教程 + 月度更新</li>
+    </ul>
+    <div class="price-row">
+      <span class="price">$29</span>
+      <span class="old-price">$49</span>
+    </div>
+    <a href="#" class="btn">Buy on Gumroad →</a>
+  </div>
+
+  <div class="product-card">
+    <div class="icon">🤖</div>
+    <h3>ChatGPT 生产力 Prompt 套装</h3>
+    <p class="desc">100+ 精选 Prompt。覆盖商业、内容创作、编程、学习——每个经过实测优化。</p>
+    <ul class="features">
+      <li>4 大分类 100+ Prompts</li>
+      <li>每个含输出示例</li>
+      <li>ChatGPT 使用高级技巧</li>
+    </ul>
+    <div class="price-row">
+      <span class="price">$19</span>
+      <span class="old-price">$29</span>
+    </div>
+    <a href="#" class="btn">Buy on Gumroad →</a>
+  </div>
+
+  <div class="product-card">
+    <div class="icon">🎨</div>
+    <h3>BentoFolio — 个人作品集模板</h3>
+    <p class="desc">2026 最火的 Bento Grid 设计。暗色主题、响应式、即下即用。</p>
+    <ul class="features">
+      <li>纯 HTML/CSS 零配置</li>
+      <li>Bento Grid 布局</li>
+      <li>移动端完美适配</li>
+    </ul>
+    <div class="price-row">
+      <span class="price">$24</span>
+      <span class="old-price">$39</span>
+    </div>
+    <a href="#" class="btn">Buy on Gumroad →</a>
+  </div>
+
+  <div class="product-card">
+    <div class="icon">💻</div>
+    <h3>SaaS 落地页模板 LaunchPad</h3>
+    <p class="desc">标准 SaaS 布局。Hero + 功能展示 + 定价方案 + CTA——为转化率优化。</p>
+    <ul class="features">
+      <li>纯 HTML/CSS 零依赖</li>
+      <li>SEO 友好结构</li>
+      <li>暗色/亮色双模式</li>
+    </ul>
+    <div class="price-row">
+      <span class="price">$34</span>
+      <span class="old-price">$59</span>
+    </div>
+    <a href="#" class="btn">Buy on Gumroad →</a>
+  </div>
+
+  <div class="product-card">
+    <div class="icon">📝</div>
+    <h3>内容创作者 Notion 工作台</h3>
+    <p class="desc">内容日历代办、素材库、数据分析——一个模板管好全平台内容创作。</p>
+    <ul class="features">
+      <li>多平台排期管理</li>
+      <li>内容绩效追踪</li>
+      <li>灵感收集箱</li>
+    </ul>
+    <div class="price-row">
+      <span class="price">$19</span>
+      <span class="old-price">$35</span>
+    </div>
+    <a href="#" class="btn">Buy on Gumroad →</a>
+  </div>
+
+  <div class="product-card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#eef2ff,#faf5ff);border:2px dashed var(--accent)">
+    <div style="font-size:3rem;margin-bottom:12px">📦</div>
+    <h3>全部产品套装</h3>
+    <p class="desc" style="margin-bottom:12px">以上全部 5 个产品，一次购买永久访问</p>
+    <div class="price-row" style="justify-content:center">
+      <span class="price">$79</span>
+      <span class="old-price">$212</span>
+    </div>
+    <span style="font-size:12px;color:#10b981;font-weight:600;margin-bottom:16px">省 $133 (63% OFF)</span>
+    <a href="#" class="btn" style="width:100%">Buy Bundle →</a>
+  </div>
+
+</section>
+
+<section class="testimonial">
+  <q>These templates saved me 40+ hours of setup time. The Notion pack alone is worth 10x the price.</q>
+  <p class="author">— Michael, Startup Founder</p>
+</section>
+
+<footer class="footer">
+  <p>DigitalCraft © 2026 · Premium Digital Products · Instant Download · 30-Day Guarantee</p>
+</footer>
+
+</body>
+</html>
