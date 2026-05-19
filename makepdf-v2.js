@@ -1,0 +1,133 @@
+const fs = require('fs');
+
+const html = `<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  body { font-family: 'Georgia', serif; max-width: 700px; margin: 0 auto; padding: 50px; color: #1a1a2e; line-height: 1.8; background: #faf5ff; }
+  .cover { text-align: center; padding: 60px 0; }
+  .cover h1 { font-size: 36px; color: #7c3aed; margin-bottom: 8px; }
+  .cover .sub { font-size: 18px; color: #6b7280; }
+  h2 { font-size: 22px; color: #7c3aed; margin-top: 40px; border-bottom: 2px solid #e9d5ff; padding-bottom: 8px; }
+  h3 { font-size: 17px; color: #4c1d95; margin-top: 24px; }
+  .step { background: #f5f3ff; border-radius: 12px; padding: 20px; margin: 20px 0; }
+  .step h3 { margin-top: 0; color: #7c3aed; }
+  .field-box { background: #fff; border: 1px solid #e9d5ff; border-radius: 8px; padding: 12px 16px; margin: 10px 0; font-size: 14px; }
+  .field-box strong { color: #7c3aed; }
+  .tip { background: #fef9c3; border-left: 4px solid #eab308; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th { background: #f5f3ff; padding: 10px 12px; text-align: left; font-weight: 600; color: #4c1d95; }
+  td { padding: 10px 12px; border-bottom: 1px solid #e9d5ff; }
+  ul li { margin: 8px 0; }
+  @media print { body { padding: 20px; background: white; } }
+</style></head><body>
+
+<div class="cover">
+  <h1>🧠 FocusFlow</h1>
+  <p class="sub">The ADHD-Friendly Productivity System</p>
+  <p class="sub" style="font-size:14px;color:#9ca3af;">A complete step-by-step guide to building your own 3-database Notion system — designed for how ADHD brains actually work.</p>
+</div>
+
+<h2>Welcome</h2>
+<p>If you have ADHD, you have probably tried every productivity system out there. Bullet journals. GTD. Pomodoro. Complex Notion templates with 47 interconnected databases.</p>
+<p>They all work great — for about three days. Then the novelty wears off, the dopamine fades, and you are back to square one, feeling like you failed <em>again</em>.</p>
+<p><strong>You did not fail. The system failed you.</strong></p>
+<p>Most productivity tools are built for neurotypical brains. They assume you can: look at a list of 50 tasks without feeling paralyzed; remember to check your task manager without external cues; get dopamine from completing a checkbox. ADHD brains do not work that way. This guide will show you how to build a system that actually works <em>with</em> your brain, not against it.</p>
+
+<h2>The Three Principles</h2>
+
+<h3>1. Externalize Everything</h3>
+<p>Your working memory is limited. When you try to hold tasks, ideas, and worries in your head simultaneously, nothing gets done — your brain spends all its energy trying not to forget. The solution: get everything out of your head and into an external system <em>immediately</em>. No filtering. No organizing. Just dump.</p>
+
+<h3>2. Limit Choices to Three</h3>
+<p>Choice paralysis is real. Faced with 20 tasks, an ADHD brain sees "20 things I have not done" and shuts down. But three tasks? Three is manageable. Three feels possible. Three you can actually start.</p>
+
+<h3>3. Manufacture Dopamine</h3>
+<p>Neurotypical brains release dopamine when completing tasks. ADHD brains often do not — the reward system works differently. You need to <em>see</em> your progress visually. A wall of completed tasks, a streak of good days, a visual record that proves you are making progress — even when it does not feel like it.</p>
+
+<h2>Building Your FocusFlow System in Notion (Step by Step)</h2>
+<p>We are going to build three simple Notion databases. No templates to buy, no complex formulas — just step-by-step instructions. You will need a free Notion account at <strong>notion.so</strong>. Each database takes about 5 minutes to set up.</p>
+
+<div class="step">
+<h3>Database 1: 🧠 Brain Dump</h3>
+<p><strong>Purpose:</strong> Capture any thought in under 3 seconds before it escapes.</p>
+<p><strong>How to create:</strong> In Notion, create a new page called "Brain Dump". Type <strong>/database</strong> and select "Database - Inline". Name it "Brain Dump".</p>
+<p><strong>Fields to add:</strong></p>
+<div class="field-box"><strong>Name</strong> (default Title field) — the thought itself</div>
+<div class="field-box"><strong>Type</strong> (Select) — options: 💡 Idea, ✅ Task, 😰 Worry, ✨ Inspiration</div>
+<div class="field-box"><strong>Status</strong> (Select) — options: New, Processing, Done, Dismissed</div>
+<div class="field-box"><strong>Created</strong> (Created time) — automatic timestamp</div>
+<p><strong>Views:</strong></p>
+<div class="field-box"><strong>Quick Capture</strong> — Table view, sorted newest first. Your main dumping ground.</div>
+<div class="field-box"><strong>Worries</strong> — Filter: Type = 😰 Worry AND Status = New. Review each morning.</div>
+<div class="field-box"><strong>Ideas</strong> — Filter: Type = 💡 Idea AND Status = New. Review weekly.</div>
+<div class="tip">💡 <strong>How to use:</strong> Brain Dump is not a todo list. It is a parking lot. The moment a thought pops into your head, open this page and type it. Three seconds max. Review once in the morning and once before bed.</div>
+</div>
+
+<div class="step">
+<h3>Database 2: ✅ Today's Focus</h3>
+<p><strong>Purpose:</strong> Show you exactly 3 tasks per day — no more, no less.</p>
+<p><strong>How to create:</strong> Create a new page called "Today's Focus". Type <strong>/database</strong> and select "Database - Inline".</p>
+<p><strong>Fields to add:</strong></p>
+<div class="field-box"><strong>Task</strong> (Title) — what you need to do</div>
+<div class="field-box"><strong>Energy</strong> (Select) — ⚡ High, 🔋 Medium, 🪫 Low</div>
+<div class="field-box"><strong>Status</strong> (Select) — Not Started, In Progress, Done, Skipped</div>
+<div class="field-box"><strong>Date</strong> (Date) — when you plan to do it</div>
+<div class="field-box"><strong>Started?</strong> (Checkbox) — did you at least begin? (Most important field!)</div>
+<p><strong>Views:</strong></p>
+<div class="field-box"><strong>Today</strong> — Gallery view, filter: Date = Today. Shows only 3 tasks at a time.</div>
+<div class="field-box"><strong>This Week</strong> — Calendar view, all tasks across the week.</div>
+<div class="field-box"><strong>Done!</strong> — Table view, filter: Status = Done. Your achievement wall.</div>
+<div class="tip">💡 <strong>The "Started?" checkbox is the secret weapon.</strong> ADHD brains struggle with task initiation. This checkbox gives you a dopamine hit for simply <em>beginning</em> — even if you do not finish. Research shows once you start a task, you are 80% more likely to complete it.</div>
+<p><strong>The 3-Task Rule by Energy Level:</strong></p>
+<table><tr><th>Energy</th><th>How Many Tasks</th><th>When</th></tr>
+<tr><td>⚡ High</td><td>2-3 demanding tasks</td><td>Your peak focus time</td></tr>
+<tr><td>🔋 Medium</td><td>1-2 moderate tasks</td><td>Afternoon</td></tr>
+<tr><td>🪫 Low</td><td>1 easy task</td><td>Low-energy periods</td></tr></table>
+</div>
+
+<div class="step">
+<h3>Database 3: 🎮 Dopamine Tracker</h3>
+<p><strong>Purpose:</strong> Build a visual record of your wins. See your progress. Stay motivated.</p>
+<p><strong>How to create:</strong> Create a new page called "Dopamine Tracker". Type <strong>/database</strong> and select "Database - Inline".</p>
+<p><strong>Fields to add:</strong></p>
+<div class="field-box"><strong>Date</strong> (Date) — the day</div>
+<div class="field-box"><strong>What I Did</strong> (Title) — one thing you accomplished (no matter how small)</div>
+<div class="field-box"><strong>Mood</strong> (Select) — 😄 Great, 🙂 Good, 😐 Okay, 😕 Meh, 😞 Rough</div>
+<div class="field-box"><strong>Category</strong> (Select) — Work, Health, Relationships, Personal, Learning</div>
+<div class="field-box"><strong>Win Level</strong> (Select) — 🏆 Big Win, ⭐ Medium Win, 💪 Small Win</div>
+<p><strong>Views:</strong></p>
+<div class="field-box"><strong>Win Wall</strong> — Gallery view, sorted newest first. Every win, big and small.</div>
+<div class="field-box"><strong>Mood Calendar</strong> — Calendar view by date. Spot patterns in your mood.</div>
+<div class="field-box"><strong>Weekly Summary</strong> — Table view, filter: This Week. Count your wins.</div>
+<div class="tip">💡 <strong>Track wins, not losses.</strong> Only record what you DID. Not what you did not do. Even on your worst day, you did something — got out of bed, ate a meal, sent one email. Log it. It counts.</div>
+</div>
+
+<h2>Your Daily Routine (5 Minutes Total)</h2>
+<h3>Morning (2 min)</h3>
+<ol>
+  <li>Open <strong>Brain Dump</strong> → review Worries view. Any worries that are actually tasks? Move them to Today's Focus.</li>
+  <li>Open <strong>Today's Focus</strong> → pick 3 tasks. Match them to your current energy level.</li>
+  <li>Start the first task. Do not plan more. Do not optimize.</li>
+</ol>
+<h3>Evening (3 min)</h3>
+<ol>
+  <li>Open <strong>Today's Focus</strong> → check "Started?" for anything you began. Mark one as Done if completed.</li>
+  <li>Open <strong>Dopamine Tracker</strong> → add at least one entry. What did you do today?</li>
+  <li>Open <strong>Brain Dump</strong> → dump anything still spinning in your head. Clear the cache before sleep.</li>
+</ol>
+
+<h2>FAQ</h2>
+<p><strong>Q: What if I forget to use the system for a week?</strong><br>A: Normal. Pick it back up. Do not try to "catch up" — just start from today. The system is resilient to gaps.</p>
+<p><strong>Q: Can I customize it?</strong><br>A: Absolutely. Add colors, emojis, more views, additional fields. Make it feel like <em>yours</em>. Just do not add more databases — three is the sweet spot.</p>
+<p><strong>Q: Why Notion and not a paper journal?</strong><br>A: Paper journals require you to have the journal with you. Notion syncs to your phone. ADHD brains need to capture thoughts the moment they happen.</p>
+<p><strong>Q: Is this only for people with diagnosed ADHD?</strong><br>A: Designed for ADHD brains, but anyone who struggles with focus, procrastination, or feeling overwhelmed will benefit.</p>
+
+<div style="margin-top: 60px; padding-top: 20px; border-top: 1px solid #e5e7eb; text-align: center; color: #9ca3af; font-size: 13px;">
+  <p>FocusFlow — A DigitalCraft Product</p>
+  <p>One-time purchase · Lifetime access · Free updates</p>
+  <p>Questions? Contact us through Payhip</p>
+</div>
+
+</body></html>`;
+
+fs.writeFileSync('C:/Users/14397/money-project/products/covers/focusflow-v2.html', html);
