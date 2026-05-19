@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1040"/>
+    </linearGradient>
+    <linearGradient id="gold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a853"/>
+      <stop offset="50%" style="stop-color:#f0d78c"/>
+      <stop offset="100%" style="stop-color:#b8922e"/>
+    </linearGradient>
+    <linearGradient id="goldLine2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="15%" style="stop-color:#d4a85344"/>
+      <stop offset="50%" style="stop-color:#f0d78c"/>
+      <stop offset="85%" style="stop-color:#d4a85344"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg2)"/>
+
+  <!-- Top accent line -->
+  <rect x="100" y="60" width="600" height="2" fill="url(#goldLine2)"/>
+
+  <!-- AI icon -->
+  <g transform="translate(400,160)" filter="url(#glow2)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#gold2)" stroke-width="2" opacity="0.6"/>
+    <text x="0" y="8" text-anchor="middle" font-size="36" fill="url(#gold2)" font-family="sans-serif">🤖</text>
+  </g>
+
+  <!-- Tag -->
+  <text x="400" y="240" text-anchor="middle" font-size="13" fill="#d4a853" font-family="sans-serif" letter-spacing="5" font-weight="600">55+ BATTLE-TESTED PROMPT SYSTEMS</text>
+
+  <!-- Main Title -->
+  <text x="400" y="330" text-anchor="middle" font-size="46" fill="url(#gold2)" font-family="Georgia,serif" font-weight="bold">
+    <tspan x="400" dy="0">THE AI-POWERED</tspan>
+    <tspan x="400" dy="55">AGENT</tspan>
+  </text>
+
+  <!-- Divider -->
+  <rect x="250" y="370" width="300" height="1.5" fill="url(#goldLine2)"/>
+
+  <!-- Subtitle -->
+  <text x="400" y="420" text-anchor="middle" font-size="20" fill="#c0b090" font-family="Georgia,serif" font-style="italic">
+    ChatGPT Prompt Systems for
+  </text>
+  <text x="400" y="448" text-anchor="middle" font-size="20" fill="#c0b090" font-family="Georgia,serif" font-style="italic">
+    Real Estate Professionals
+  </text>
+
+  <!-- Feature bullets -->
+  <g transform="translate(140,510)" font-family="sans-serif" font-size="14" fill="#a090c0">
+    <text x="0" y="0">🏠 15 Listing Description Systems</text>
+    <text x="0" y="30">📧 15 Client Communication Templates</text>
+    <text x="0" y="60">📱 15 Social Media Content Systems</text>
+    <text x="0" y="90">📊 10 Business Management Workflows</text>
+    <text x="0" y="120">🎁 BONUS: AI Setup Guide</text>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="100" y="670" width="600" height="1.5" fill="url(#goldLine2)"/>
+
+  <text x="400" y="720" text-anchor="middle" font-size="13" fill="#a090c0" font-family="sans-serif" letter-spacing="3">INSTANT DOWNLOAD</text>
+  <text x="400" y="750" text-anchor="middle" font-size="11" fill="#6a5a80" font-family="sans-serif">DigitalCraft © 2026</text>
+
+  <circle cx="370" cy="780" r="2" fill="#d4a853" opacity="0.4"/>
+  <circle cx="385" cy="780" r="2" fill="#d4a853" opacity="0.6"/>
+  <circle cx="400" cy="780" r="2" fill="#d4a853" opacity="0.8"/>
+  <circle cx="415" cy="780" r="2" fill="#d4a853" opacity="0.6"/>
+  <circle cx="430" cy="780" r="2" fill="#d4a853" opacity="0.4"/>
+</svg>
