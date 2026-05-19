@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BentoFolio — Premium Developer Portfolio Template</title>
+<meta name="description" content="A stunning Bento Grid portfolio template for developers and designers. Dark theme, zero dependencies, launch in 10 minutes. Stand out from the crowd.">
+<meta name="keywords" content="developer portfolio template, bento grid portfolio, HTML portfolio template, web developer portfolio, designer portfolio, bento folio">
+<meta property="og:title" content="BentoFolio — Premium Developer Portfolio Template">
+<meta property="og:description" content="A portfolio that stands out. In 10 minutes. Bento Grid layout, dark theme, zero dependencies.">
+<meta property="og:type" content="product">
+<meta property="og:price:amount" content="24">
+<meta property="og:price:currency" content="USD">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"BentoFolio — Premium Developer Portfolio Template",
+  "description":"A stunning Bento Grid portfolio template for developers and designers. Pure HTML/CSS, zero dependencies, responsive. Launch your portfolio in 10 minutes.",
+  "offers":{"@type":"Offer","price":"24","priceCurrency":"USD","availability":"https://schema.org/InStock"}
+}
+</script>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#08080c;
+    --surface:#111118;
+    --surface2:#181820;
+    --text:#e4e4ec;
+    --text2:#88889a;
+    --accent:#6c5ce7;
+    --accent2:#a29bfe;
+    --accent3:#00cec9;
+    --green:#00b894;
+    --pink:#fd79a8;
+    --orange:#e17055;
+    --sky:#74b9ff;
+    --border:rgba(255,255,255,0.06);
+    --radius:14px;
+    --radius-lg:20px;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  /* Nav */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,8,12,0.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+  .nav-inner{max-width:1100px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+  .nav-logo{font-weight:800;font-size:1.1rem;color:var(--accent2);text-decoration:none;letter-spacing:-0.5px}
+  .nav-links{display:flex;gap:20px;align-items:center}
+  .nav-links a{color:var(--text2);text-decoration:none;font-size:14px;font-weight:500;transition:color 0.2s}
+  .nav-links a:hover{color:var(--accent2)}
+  .nav-cta{background:var(--accent);color:#fff!important;padding:8px 18px;border-radius:8px;font-weight:600!important;font-size:13px!important;transition:background 0.2s!important}
+  .nav-cta:hover{background:var(--accent2)!important}
+
+  /* Hero */
+  .hero{padding:130px 24px 80px;text-align:center;position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:900px;height:900px;background:radial-gradient(circle,rgba(108,92,231,0.07),rgba(0,206,201,0.04),transparent 70%);pointer-events:none}
+  .hero-badge{display:inline-block;padding:6px 18px;background:rgba(108,92,231,0.1);border:1px solid rgba(108,92,231,0.25);color:var(--accent2);border-radius:20px;font-size:13px;font-weight:600;margin-bottom:24px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;letter-spacing:-1.5px;line-height:1.15;margin-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto}
+  .hero h1 span{background:linear-gradient(135deg,var(--accent2),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .hero p{color:var(--text2);font-size:1.1rem;max-width:580px;margin:0 auto 36px}
+  .hero-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{padding:14px 32px;border-radius:var(--radius);font-weight:600;font-size:15px;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;cursor:pointer;border:none}
+  .btn-accent{background:linear-gradient(135deg,var(--accent),#5a4bd1);color:#fff}
+  .btn-accent:hover{transform:translateY(-1px);box-shadow:0 8px 30px rgba(108,92,231,0.3)}
+  .btn-outline{border:1.5px solid rgba(108,92,231,0.3);color:var(--accent2);background:transparent}
+  .btn-outline:hover{background:rgba(108,92,231,0.06)}
+
+  /* Sections */
+  .section{padding:80px 0}
+  .section-label{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent2);margin-bottom:12px}
+  .section h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;letter-spacing:-1px;margin-bottom:16px}
+  .section .sub{color:var(--text2);font-size:1.05rem;max-width:600px;margin-bottom:48px}
+
+  /* Live Preview */
+  .preview-wrapper{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 4px 40px rgba(0,0,0,0.3)}
+  .preview-toolbar{background:var(--surface2);padding:12px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
+  .preview-dot{width:10px;height:10px;border-radius:50%}
+  .preview-dot.red{background:#ff5f57}
+  .preview-dot.yellow{background:#febc2e}
+  .preview-dot.green{background:#28c840}
+  .preview-url{flex:1;background:var(--bg);border-radius:6px;padding:6px 12px;font-size:11px;color:var(--text2);font-family:'SF Mono','Fira Code',monospace}
+  .preview-frame{background:var(--bg);padding:0;overflow:hidden}
+  .bento-mock{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:auto auto auto;gap:12px;padding:24px;min-height:400px}
+  .bento-cell{background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:20px;display:flex;flex-direction:column;justify-content:center}
+  .bento-cell.c1{grid-row:1/3;background:linear-gradient(135deg,rgba(108,92,231,0.15),rgba(162,155,254,0.05))}
+  .bento-cell.c2{grid-column:2/4;display:flex;flex-direction:row;align-items:center;gap:16px}
+  .bento-cell.c3{background:linear-gradient(135deg,rgba(0,206,201,0.1),rgba(0,184,148,0.05))}
+  .bento-cell.c4{background:linear-gradient(135deg,rgba(253,121,168,0.1),rgba(225,112,85,0.05))}
+  .bento-cell.c5{grid-column:2/4;background:linear-gradient(135deg,rgba(116,185,255,0.08),rgba(108,92,231,0.05))}
+  .mock-avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent3));flex-shrink:0}
+  .mock-name{font-size:1.1rem;font-weight:700}
+  .mock-title{font-size:12px;color:var(--accent3)}
+  .mock-tag{display:inline-block;padding:3px 10px;background:rgba(108,92,231,0.15);color:var(--accent2);border-radius:4px;font-size:10px;font-weight:600}
+  .mock-tag.teal{background:rgba(0,206,201,0.12);color:var(--accent3)}
+  .mock-project{font-size:14px;font-weight:600;margin-bottom:4px}
+  .mock-project-sub{font-size:11px;color:var(--text2)}
+
+  /* Feature Grid */
+  .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .feature-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;transition:border-color 0.2s}
+  .feature-item:hover{border-color:rgba(108,92,231,0.3)}
+  .feature-icon{font-size:1.6rem;margin-bottom:12px}
+  .feature-item h4{font-size:0.95rem;font-weight:600;margin-bottom:6px}
+  .feature-item p{font-size:13px;color:var(--text2);line-height:1.6}
+
+  /* Perfect For */
+  .audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .audience-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;text-align:center;transition:transform 0.2s}
+  .audience-card:hover{transform:translateY(-3px)}
+  .audience-icon{font-size:2.2rem;margin-bottom:14px}
+  .audience-card h4{font-weight:700;margin-bottom:8px}
+  .audience-card p{font-size:13px;color:var(--text2);line-height:1.6}
+
+  /* What You Get */
+  .get-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+  .get-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;display:flex;align-items:center;gap:14px}
+  .get-item .get-icon{font-size:1.6rem}
+  .get-item h4{font-size:0.9rem;font-weight:600}
+  .get-item p{font-size:12px;color:var(--text2)}
+
+  /* Pricing Cards */
+  .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:800px;margin:0 auto}
+  .pricing-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px;text-align:center;position:relative}
+  .pricing-card.featured{border:2px solid var(--accent);box-shadow:0 4px 30px rgba(108,92,231,0.12)}
+  .pricing-card .badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:5px 18px;border-radius:10px;font-size:12px;font-weight:700}
+  .pricing-card h4{font-size:1.1rem;margin-bottom:16px}
+  .pricing-card .price{font-size:3.5rem;font-weight:800;letter-spacing:-2px}
+  .pricing-card .price span{font-size:1.1rem;font-weight:500;color:var(--text2)}
+  .pricing-card .price-sub{color:var(--text2);font-size:13px;margin-bottom:24px}
+  .pricing-features{list-style:none;text-align:left;margin-bottom:24px}
+  .pricing-features li{padding:6px 0;font-size:13px;color:var(--text2)}
+  .pricing-features li::before{content:'\2713 ';color:var(--green);font-weight:700}
+  .pricing-savings{display:inline-block;background:rgba(0,184,148,0.1);color:var(--green);padding:4px 12px;border-radius:6px;font-size:12px;font-weight:700;margin-bottom:16px}
+
+  /* FAQ */
+  .faq-list{max-width:700px;margin:0 auto}
+  .faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px 28px;margin-bottom:14px}
+  .faq-item h4{font-size:1rem;font-weight:600;margin-bottom:8px;color:var(--accent2)}
+  .faq-item p{font-size:14px;color:var(--text2);line-height:1.7}
+
+  /* Final CTA */
+  .cta-section{text-align:center;padding:100px 0;position:relative;background:linear-gradient(180deg,transparent,rgba(108,92,231,0.05),transparent)}
+
+  /* Footer */
+  .footer{padding:40px 0;text-align:center;border-top:1px solid var(--border);color:var(--text2);font-size:13px}
+  .footer a{color:var(--accent2);text-decoration:none}
+  .footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+
+  @media(max-width:768px){
+    .nav-links{display:none}
+    .hero{padding:100px 20px 60px}
+    .bento-mock{grid-template-columns:1fr;min-height:auto}
+    .bento-cell.c1{grid-row:auto}
+    .bento-cell.c2{grid-column:auto}
+    .bento-cell.c5{grid-column:auto}
+    .pricing-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">DigitalCraft</a>
+    <div class="nav-links">
+      <a href="landing-real-estate-ai.html">Real Estate AI</a>
+      <a href="landing-adhd-notion.html">FocusFlow</a>
+      <a href="landing-bento-portfolio.html">BentoFolio</a>
+      <a href="#pricing" class="nav-cta">Get BentoFolio &mdash; $24</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">&#x2728; New: Bento Grid Design</div>
+  <h1>A Portfolio That <span>Stands Out.</span><br>In 10 Minutes.</h1>
+  <p>BentoFolio is a premium HTML/CSS portfolio template built with the latest Bento Grid design trend. Dark theme, fully responsive, zero dependencies. Copy-paste your info and go live today.</p>
+  <div class="hero-buttons">
+    <a href="#pricing" class="btn btn-accent">Get BentoFolio for $24 &#x2192;</a>
+    <a href="#preview" class="btn btn-outline">See Live Preview</a>
+  </div>
+</section>
+
+<section class="section container" id="preview">
+  <div class="section-label">Live Preview</div>
+  <h2>See What Your Portfolio Will Look Like</h2>
+  <p class="sub">This is a live mockup of the BentoFolio template. Every element below is styled with the actual template CSS.</p>
+  <div class="preview-wrapper">
+    <div class="preview-toolbar">
+      <div class="preview-dot red"></div>
+      <div class="preview-dot yellow"></div>
+      <div class="preview-dot green"></div>
+      <div class="preview-url">https://yourname.dev</div>
+    </div>
+    <div class="preview-frame">
+      <div class="bento-mock">
+        <div class="bento-cell c1">
+          <div style="font-size:13px;color:var(--accent2);font-weight:700;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px">Hello, I'm</div>
+          <div style="font-size:2rem;font-weight:800;letter-spacing:-1px;margin-bottom:6px">Alex Chen</div>
+          <div style="font-size:0.9rem;color:var(--accent3);margin-bottom:16px">Full-Stack Developer</div>
+          <div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:16px">I build performant web applications with modern technologies. Currently focused on React, TypeScript, and edge computing.</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <span class="mock-tag">React</span>
+            <span class="mock-tag teal">TypeScript</span>
+            <span class="mock-tag">Node.js</span>
+            <span class="mock-tag teal">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="bento-cell c2">
+          <div class="mock-avatar"></div>
+          <div>
+            <div class="mock-tag teal" style="margin-bottom:6px">Available for hire</div>
+            <div style="font-size:14px;color:var(--text2)">Based in San Francisco</div>
+            <div style="font-size:14px;color:var(--text2)">5+ years experience</div>
+          </div>
+        </div>
+        <div class="bento-cell c3">
+          <div class="mock-project">E-Commerce Platform</div>
+          <div class="mock-project-sub">Next.js &middot; Stripe &middot; 2024</div>
+          <div style="margin-top:8px;display:flex;gap:4px">
+            <span class="mock-tag">React</span><span class="mock-tag teal">Stripe</span>
+          </div>
+        </div>
+        <div class="bento-cell c4">
+          <div class="mock-project">Real-Time Dashboard</div>
+          <div class="mock-project-sub">WebSocket &middot; D3.js &middot; 2024</div>
+          <div style="margin-top:8px;display:flex;gap:4px">
+            <span class="mock-tag teal">D3</span><span class="mock-tag">WS</span>
+          </div>
+        </div>
+        <div class="bento-cell c5">
+          <div style="display:flex;gap:24px;align-items:center;justify-content:space-around;flex-wrap:wrap">
+            <div style="text-align:center"><div style="font-size:1.5rem;font-weight:800">15+</div><div style="font-size:11px;color:var(--text2)">Projects</div></div>
+            <div style="text-align:center"><div style="font-size:1.5rem;font-weight:800">8</div><div style="font-size:11px;color:var(--text2)">Happy Clients</div></div>
+            <div style="text-align:center"><div style="font-size:1.5rem;font-weight:800">3K</div><div style="font-size:11px;color:var(--text2)">GitHub Stars</div></div>
+            <div style="text-align:center"><div style="font-size:1.5rem;font-weight:800">5</div><div style="font-size:11px;color:var(--text2)">Years Exp.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="features">
+  <div class="section-label">Features</div>
+  <h2>Everything You Need. Nothing You Don't.</h2>
+  <p class="sub">BentoFolio is built for developers who want a portfolio that looks custom-designed without spending weeks building one.</p>
+  <div class="feature-grid">
+    <div class="feature-item">
+      <div class="feature-icon">&#x1F4F1;</div>
+      <h4>Bento Grid Layout</h4>
+      <p>Asymmetric, visually stunning grid inspired by Apple's design language. Your portfolio looks like it cost $5,000 to design.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x1F31A;</div>
+      <h4>Premium Dark Theme</h4>
+      <p>Carefully tuned color palette with purple and teal accents. Low eye strain, high visual impact. Looks great on any screen.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x1F4BB;</div>
+      <h4>Fully Responsive</h4>
+      <p>Mobile, tablet, desktop &mdash; BentoFolio adapts beautifully at every breakpoint. The grid gracefully collapses on smaller screens.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x26A1;</div>
+      <h4>Zero Dependencies</h4>
+      <p>Pure HTML and CSS. No npm install, no build step, no framework churn. Just open the file and it works. Lighthouse score: 98+.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x1F50D;</div>
+      <h4>SEO Optimized</h4>
+      <p>Semantic HTML, proper heading hierarchy, meta tags, Open Graph, and JSON-LD structured data. Google will love your portfolio.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x1F3A8;</div>
+      <h4>Easy to Customize</h4>
+      <p>CSS variables for every color, spacing, and font. Change the entire theme in 5 lines of code. No designer needed.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x23F1;</div>
+      <h4>Smooth Animations</h4>
+      <p>Subtle CSS transitions and hover effects that feel polished without being distracting. Your portfolio feels alive, not static.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x1F4E6;</div>
+      <h4>Ready-to-Deploy</h4>
+      <p>Single HTML file. Drop it on Netlify, Vercel, GitHub Pages, or any static host. Go from purchase to live in under 10 minutes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="perfect-for">
+  <div class="section-label">Who It's For</div>
+  <h2>Perfect for Developers, Designers &amp; Freelancers</h2>
+  <div class="audience-grid">
+    <div class="audience-card">
+      <div class="audience-icon">&#x1F468;&#x200D;&#x1F4BB;</div>
+      <h4>Software Developers</h4>
+      <p>Showcase your projects, skills, and experience in a layout that reflects your technical taste. Stand out from the sea of boring, cookie-cutter portfolios.</p>
+    </div>
+    <div class="audience-card">
+      <div class="audience-icon">&#x1F3A8;</div>
+      <h4>UX/UI Designers</h4>
+      <p>Your portfolio should prove your design skills before anyone reads a word. BentoFolio's grid is a design statement in itself.</p>
+    </div>
+    <div class="audience-card">
+      <div class="audience-icon">&#x1F4BC;</div>
+      <h4>Freelancers</h4>
+      <p>Look established from day one. A professional portfolio builds trust with clients and justifies higher rates. Ship it this afternoon.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="what-you-get">
+  <div class="section-label">What You Get</div>
+  <h2>Everything Included, Ready to Ship</h2>
+  <div class="get-grid">
+    <div class="get-item">
+      <div class="get-icon">&#x1F4C4;</div>
+      <div><h4>index.html</h4><p>Complete, production-ready portfolio</p></div>
+    </div>
+    <div class="get-item">
+      <div class="get-icon">&#x1F4D6;</div>
+      <div><h4>Customization Guide</h4><p>Step-by-step PDF with screenshots</p></div>
+    </div>
+    <div class="get-item">
+      <div class="get-icon">&#x1F3A8;</div>
+      <div><h4>2 Color Variants</h4><p>Purple-Teal + Gold-Coral editions</p></div>
+    </div>
+    <div class="get-item">
+      <div class="get-icon">&#x1F4F1;</div>
+      <div><h4>Mobile-First CSS</h4><p>Perfect on phones, tablets &amp; desktops</p></div>
+    </div>
+    <div class="get-item">
+      <div class="get-icon">&#x1F4E7;</div>
+      <div><h4>Contact Form</h4><p>Working form with Formspree integration</p></div>
+    </div>
+    <div class="get-item">
+      <div class="get-icon">&#x1F511;</div>
+      <div><h4>Lifetime License</h4><p>Use on unlimited projects &amp; domains</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="pricing">
+  <div class="section-label">Pricing</div>
+  <h2 style="text-align:center">Choose Your Plan</h2>
+  <p class="sub" style="text-align:center;margin-left:auto;margin-right:auto">One template. Or the entire DigitalCraft bundle. Both come with lifetime access.</p>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <h4>BentoFolio</h4>
+      <div class="price"><span>$</span>24</div>
+      <div class="price-sub">One-time payment. Lifetime access.</div>
+      <ul class="pricing-features">
+        <li>Complete BentoFolio template</li>
+        <li>2 color variant editions</li>
+        <li>Customization guide (PDF)</li>
+        <li>Contact form integration</li>
+        <li>Lifetime updates</li>
+      </ul>
+      <a href="#" class="btn btn-outline" style="width:100%;justify-content:center">Buy BentoFolio &#x2192;</a>
+    </div>
+    <div class="pricing-card featured">
+      <div class="badge">Best Value</div>
+      <h4>DigitalCraft Bundle</h4>
+      <div class="price"><span>$</span>79</div>
+      <div class="price-sub">All 5 products. One payment.</div>
+      <div class="pricing-savings">Save $133 (63% OFF)</div>
+      <ul class="pricing-features">
+        <li>BentoFolio ($24 value)</li>
+        <li>LaunchPad SaaS template ($34 value)</li>
+        <li>AI-Powered Agent 55 prompts ($47 value)</li>
+        <li>FocusFlow Notion template ($34 value)</li>
+        <li>Creator Notion Workbench ($19 value)</li>
+        <li>Startup Management Pack ($29 value)</li>
+        <li>Lifetime updates on all products</li>
+      </ul>
+      <a href="../index.html" class="btn btn-accent" style="width:100%;justify-content:center;font-size:16px;padding:16px">Get the Bundle &#x2192;</a>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="faq">
+  <div class="section-label">FAQ</div>
+  <h2>Quick Answers</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h4>"Do I need to know HTML/CSS to use this?"</h4>
+      <p>You should be comfortable editing an HTML file to replace the placeholder content with your own name, projects, and links. If you know how to change text inside an <code>&lt;h1&gt;</code> tag and swap out a URL, you're good. The customization guide shows you exactly what to change with annotated screenshots. If you've never touched HTML before, you might need 30 minutes and a friend who can help &mdash; but the template is designed to be as simple as possible.</p>
+    </div>
+    <div class="faq-item">
+      <h4>"Is this a React/Next.js template? Will it work with my framework?"</h4>
+      <p>BentoFolio is pure HTML and CSS by design. That means no framework lock-in, no `node_modules`, and no build step. You can absolutely take the CSS and HTML structure and adapt it to React, Vue, Svelte, or any framework you work with. The design system (CSS variables, grid layout) ports cleanly into any component-based architecture.</p>
+    </div>
+    <div class="faq-item">
+      <h4>"Can I use this for client projects?"</h4>
+      <p>Yes. The lifetime license covers unlimited personal and commercial use. You can use BentoFolio for your own portfolio, build portfolios for clients, or include it in a service package. The only restriction: you can't resell or redistribute the template files themselves as a competing product.</p>
+    </div>
+    <div class="faq-item">
+      <h4>"What if I don't like it? Do you offer refunds?"</h4>
+      <p>Yes. We offer a 14-day money-back guarantee on all individual template purchases. If BentoFolio isn't what you expected, email us and we'll refund you immediately. No hassle, no interrogation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 style="font-size:clamp(1.8rem,4vw,2.5rem);font-weight:800;letter-spacing:-1px;margin-bottom:16px">Your Portfolio Should Look<br>As Good As Your Code.</h2>
+    <p style="color:var(--text2);font-size:1.1rem;max-width:500px;margin:0 auto 32px">BentoFolio: A stunning Bento Grid portfolio in one HTML file. $24. Launch today.</p>
+    <a href="#pricing" class="btn btn-accent" style="font-size:16px;padding:16px 40px">Get BentoFolio &#x2192;</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="../index.html">DigitalCraft Home</a>
+      <a href="landing-real-estate-ai.html">Real Estate AI</a>
+      <a href="landing-adhd-notion.html">FocusFlow</a>
+      <a href="https://gumroad.com">Buy on Gumroad</a>
+    </div>
+    <p>DigitalCraft &copy; 2026 &middot; BentoFolio &middot; Instant Download &middot; 14-Day Guarantee</p>
+    <p style="margin-top:6px">For support: <a href="mailto:support@digitalcraft.co">support@digitalcraft.co</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FocusFlow: The ADHD-Friendly Notion Life OS</title>
+<meta name="description" content="Finally, a productivity system that works WITH your ADHD brain, not against it. FocusFlow is a Notion template designed for neurodivergent minds.">
+<meta name="keywords" content="ADHD Notion template, ADHD productivity, focus system, neurodivergent planner, dopamine tracker, brain dump template">
+<meta property="og:title" content="FocusFlow: The ADHD-Friendly Notion Life OS">
+<meta property="og:description" content="Finally, a system that works WITH your brain (not against it). Built for ADHD minds.">
+<meta property="og:type" content="product">
+<meta property="og:price:amount" content="34">
+<meta property="og:price:currency" content="USD">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"FocusFlow: The ADHD-Friendly Notion Life OS",
+  "description":"A Notion template built specifically for ADHD brains: Brain Dump, Today's Focus (3 tasks max), and Dopamine Tracker. Finally, a system that works with your brain, not against it.",
+  "offers":{"@type":"Offer","price":"34","priceCurrency":"USD","availability":"https://schema.org/InStock"}
+}
+</script>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#faf8f5;
+    --surface:#fff;
+    --surface2:#f5f0eb;
+    --text:#2d2a26;
+    --text2:#6b6560;
+    --accent:#7c6fa0;
+    --accent-light:#a99dc7;
+    --warm:#e8a87c;
+    --green:#6aab7c;
+    --pink:#d4869c;
+    --sky:#7aa2c4;
+    --border:#e5e0d9;
+    --radius:14px;
+    --radius-lg:20px;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .container{max-width:1050px;margin:0 auto;padding:0 24px}
+
+  /* Nav */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,248,245,0.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+  .nav-inner{max-width:1050px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+  .nav-logo{font-weight:800;font-size:1.1rem;color:var(--accent);text-decoration:none;letter-spacing:-0.5px}
+  .nav-links{display:flex;gap:20px;align-items:center}
+  .nav-links a{color:var(--text2);text-decoration:none;font-size:14px;font-weight:500;transition:color 0.2s}
+  .nav-links a:hover{color:var(--accent)}
+  .nav-cta{background:var(--accent);color:#fff!important;padding:8px 18px;border-radius:8px;font-weight:600!important;font-size:13px!important;transition:background 0.2s!important}
+  .nav-cta:hover{background:var(--accent-light)!important}
+
+  /* Hero */
+  .hero{padding:130px 24px 80px;text-align:center;position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(124,111,160,0.06),transparent 65%);pointer-events:none}
+  .hero-badge{display:inline-block;padding:6px 18px;background:rgba(124,111,160,0.08);color:var(--accent);border-radius:20px;font-size:13px;font-weight:600;margin-bottom:24px}
+  .hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-1.5px;line-height:1.2;margin-bottom:20px;max-width:750px;margin-left:auto;margin-right:auto}
+  .hero h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent),var(--warm));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .hero p{color:var(--text2);font-size:1.1rem;max-width:580px;margin:0 auto 36px}
+  .hero-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{padding:14px 32px;border-radius:var(--radius);font-weight:600;font-size:15px;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;cursor:pointer;border:none}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 30px rgba(124,111,160,0.25)}
+  .btn-ghost{border:1.5px solid var(--accent);color:var(--accent);background:transparent}
+  .btn-ghost:hover{background:rgba(124,111,160,0.06)}
+
+  /* Sections */
+  .section{padding:80px 0}
+  .section-label{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:12px}
+  .section h2{font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-0.5px;margin-bottom:16px}
+  .section .sub{color:var(--text2);font-size:1.05rem;max-width:600px;margin-bottom:48px}
+
+  /* Empathy */
+  .empathy-box{max-width:750px;margin:0 auto;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px 40px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.03)}
+  .empathy-box .quote{font-size:1.15rem;font-style:italic;color:var(--text2);margin-bottom:16px;line-height:1.8}
+  .empathy-box .bold{font-weight:700;font-size:1.2rem;color:var(--accent)}
+
+  /* Pillars */
+  .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .pillar{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;text-align:center;transition:transform 0.2s,box-shadow 0.2s}
+  .pillar:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,0.06)}
+  .pillar .pillar-icon{width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:1.8rem}
+  .pillar .pillar-icon.dump{background:rgba(212,134,156,0.12);color:var(--pink)}
+  .pillar .pillar-icon.focus{background:rgba(124,111,160,0.12);color:var(--accent)}
+  .pillar .pillar-icon.dopamine{background:rgba(122,162,196,0.12);color:var(--sky)}
+  .pillar h3{font-size:1.2rem;font-weight:700;margin-bottom:10px}
+  .pillar p{font-size:14px;color:var(--text2);line-height:1.7}
+
+  /* Screenshots */
+  .screenshots{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .screenshot-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+  .screenshot-mock{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;font-size:0.9rem;font-weight:600;color:var(--text2);position:relative;overflow:hidden}
+  .screenshot-mock.braindump-bg{background:linear-gradient(135deg,rgba(212,134,156,0.12),rgba(255,255,255,0.6))}
+  .screenshot-mock.focus-bg{background:linear-gradient(135deg,rgba(124,111,160,0.12),rgba(255,255,255,0.6))}
+  .screenshot-mock.dopamine-bg{background:linear-gradient(135deg,rgba(122,162,196,0.12),rgba(255,255,255,0.6))}
+  .mock-content{padding:20px;text-align:left;width:100%}
+  .mock-db{background:var(--surface);border-radius:10px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.05);margin-bottom:8px}
+  .mock-db .mock-row{display:flex;gap:8px;margin-bottom:6px;align-items:center}
+  .mock-db .mock-tag{padding:2px 10px;border-radius:4px;font-size:10px;font-weight:600}
+  .mock-db .mock-tag.pink{background:rgba(212,134,156,0.15);color:var(--pink)}
+  .mock-db .mock-tag.purple{background:rgba(124,111,160,0.15);color:var(--accent)}
+  .mock-db .mock-tag.green{background:rgba(106,171,124,0.15);color:var(--green)}
+  .mock-db .mock-text{font-size:12px;color:var(--text2)}
+  .mock-db .mock-check{width:14px;height:14px;border-radius:3px;border:1.5px solid var(--border);display:inline-block;margin-right:6px;flex-shrink:0}
+  .mock-db .mock-check.done{background:var(--green);border-color:var(--green);position:relative}
+  .screenshot-card .caption{padding:16px 20px;font-size:13px;color:var(--text2)}
+
+  /* Comparison Table */
+  .table-wrap{overflow-x:auto;border-radius:var(--radius-lg);border:1px solid var(--border)}
+  .compare-table{width:100%;border-collapse:collapse;min-width:600px}
+  .compare-table th{text-align:left;padding:16px 20px;font-size:13px;font-weight:700;background:var(--surface2);border-bottom:1px solid var(--border)}
+  .compare-table td{padding:14px 20px;font-size:14px;border-bottom:1px solid var(--border);color:var(--text2)}
+  .compare-table tr:last-child td{border-bottom:none}
+  .compare-table .check{color:var(--green);font-weight:700}
+  .compare-table .cross{color:#d4869c}
+  .compare-table .highlight{background:rgba(124,111,160,0.04)}
+
+  /* Testimonials */
+  .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .testimonial{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px}
+  .testimonial .stars{color:var(--warm);font-size:1rem;margin-bottom:12px}
+  .testimonial .body{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:16px;font-style:italic}
+  .testimonial .author{font-weight:700;font-size:14px}
+  .testimonial .author-role{font-size:12px;color:var(--text2)}
+
+  /* Pricing */
+  .pricing-card{max-width:440px;margin:0 auto;background:var(--surface);border:2px solid var(--accent);border-radius:var(--radius-lg);padding:40px;text-align:center;position:relative;box-shadow:0 4px 20px rgba(124,111,160,0.08)}
+  .pricing-card .badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:5px 18px;border-radius:10px;font-size:12px;font-weight:700}
+  .pricing-card .price{font-size:4rem;font-weight:800;letter-spacing:-2px;color:var(--accent)}
+  .pricing-card .price span{font-size:1.2rem;font-weight:500;color:var(--text2)}
+  .pricing-card .price-sub{color:var(--text2);font-size:14px;margin-bottom:24px}
+  .pricing-features{list-style:none;text-align:left;margin-bottom:28px}
+  .pricing-features li{padding:8px 0;font-size:14px;color:var(--text2)}
+  .pricing-features li::before{content:'\2713 ';color:var(--green);font-weight:700}
+  .guarantee{display:flex;align-items:center;gap:10px;justify-content:center;margin-top:16px;color:var(--text2);font-size:13px}
+
+  /* FAQ */
+  .faq-list{max-width:700px;margin:0 auto}
+  .faq-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px 28px;margin-bottom:14px}
+  .faq-item h4{font-size:1rem;font-weight:600;margin-bottom:8px;color:var(--accent)}
+  .faq-item p{font-size:14px;color:var(--text2);line-height:1.7}
+
+  /* Final CTA */
+  .cta-section{text-align:center;padding:100px 0;position:relative;background:linear-gradient(180deg,transparent,rgba(124,111,160,0.04),transparent)}
+
+  /* Footer */
+  .footer{padding:40px 0;text-align:center;border-top:1px solid var(--border);color:var(--text2);font-size:13px}
+  .footer a{color:var(--accent);text-decoration:none}
+  .footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+
+  @media(max-width:768px){
+    .nav-links{display:none}
+    .hero{padding:100px 20px 60px}
+    .empathy-box{padding:24px}
+    .pillars{grid-template-columns:1fr}
+    .testimonial-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">DigitalCraft</a>
+    <div class="nav-links">
+      <a href="landing-real-estate-ai.html">Real Estate AI</a>
+      <a href="landing-adhd-notion.html">FocusFlow</a>
+      <a href="landing-bento-portfolio.html">BentoFolio</a>
+      <a href="#pricing" class="nav-cta">Get FocusFlow &mdash; $34</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">&#x1F33F; Built for Neurodivergent Minds</div>
+  <h1>Finally, a System That Works <em>WITH</em> Your Brain<br>(Not Against It)</h1>
+  <p>Most productivity tools punish you for how your brain works. FocusFlow is different. It's a Notion Life OS built from the ground up for ADHD minds &mdash; with brain dumps, a 3-task focus mode, and dopamine tracking built in.</p>
+  <div class="hero-buttons">
+    <a href="#pricing" class="btn btn-primary">Get FocusFlow for $34 &#x2192;</a>
+    <a href="#how-it-works" class="btn btn-ghost">How It Works</a>
+  </div>
+</section>
+
+<section class="section container" id="empathy">
+  <div class="empathy-box">
+    <p class="quote">"You've downloaded six different productivity templates. Watched the YouTube tutorials. Set everything up on a Sunday. And by Wednesday... it's collecting digital dust. You feel like you just can't stick with anything."</p>
+    <p class="bold">It's not you. Those tools weren't built for ADHD brains.</p>
+    <p style="font-size:14px;color:var(--text2);margin-top:8px">They demand consistency your brain doesn't naturally produce. They punish you for missing a day. They overwhelm you with 47 tasks when your working memory handles maybe three. FocusFlow was designed differently.</p>
+  </div>
+</section>
+
+<section class="section container" id="how-it-works">
+  <div class="section-label">The FocusFlow System</div>
+  <h2>Three Pillars That Actually Work for ADHD Minds</h2>
+  <p class="sub">Each pillar addresses a real challenge neurodivergent people face with traditional productivity tools.</p>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-icon dump">&#x1F9E0;</div>
+      <h3>1. The Brain Dump</h3>
+      <p>Your brain generates ideas faster than you can organize them. That's not a bug &mdash; it's a feature. The Brain Dump database captures every thought, worry, and idea the moment it appears. Tag it later. Sort it when you have energy. No thought gets lost, and nothing demands immediate organization.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon focus">&#x1F3AF;</div>
+      <h3>2. Today's Focus (3 Max)</h3>
+      <p>Traditional to-do lists overwhelm ADHD brains with too many choices. FocusFlow enforces a hard limit: <strong>three tasks per day.</strong> Pick your three, and everything else fades into the background. You'll actually finish things instead of starting 12 tasks and completing zero.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon dopamine">&#x1F31F;</div>
+      <h3>3. The Dopamine Tracker</h3>
+      <p>ADHD brains run on dopamine &mdash; and traditional systems ignore this entirely. The Dopamine Tracker lets you log small wins, celebrate completions, and visualize your progress. Every checked box releases a little hit of satisfaction that keeps you coming back tomorrow.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="screenshots">
+  <div class="section-label">Inside FocusFlow</div>
+  <h2>See the Three Databases in Action</h2>
+  <p class="sub">Every database is pre-configured with example content so you can start using it immediately.</p>
+  <div class="screenshots">
+    <div class="screenshot-card">
+      <div class="screenshot-mock braindump-bg">
+        <div class="mock-content">
+          <div class="mock-db">
+            <div style="font-size:11px;font-weight:700;margin-bottom:8px;color:var(--text2)">&#x1F9E0; Brain Dump</div>
+            <div class="mock-row"><span class="mock-tag pink">Idea</span><span class="mock-text">Start a newsletter about urban gardening</span></div>
+            <div class="mock-row"><span class="mock-tag purple">Worry</span><span class="mock-text">Did I reply to Sarah's email?</span></div>
+            <div class="mock-row"><span class="mock-tag green">Task</span><span class="mock-text">Research standing desk options</span></div>
+            <div class="mock-row"><span class="mock-tag pink">Idea</span><span class="mock-text">Birthday gift ideas for Mom</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="caption"><strong>Capture everything instantly.</strong> Tags let you sort later when your brain has the bandwidth.</div>
+    </div>
+    <div class="screenshot-card">
+      <div class="screenshot-mock focus-bg">
+        <div class="mock-content">
+          <div class="mock-db">
+            <div style="font-size:11px;font-weight:700;margin-bottom:8px;color:var(--text2)">&#x1F3AF; Today's Focus &mdash; 3/3</div>
+            <div class="mock-row"><span class="mock-check done"></span><span class="mock-text" style="text-decoration:line-through">Finish proposal draft</span></div>
+            <div class="mock-row"><span class="mock-check done"></span><span class="mock-text" style="text-decoration:line-through">Call dentist</span></div>
+            <div class="mock-row"><span class="mock-check"></span><span class="mock-text">Review project timeline</span></div>
+            <div style="font-size:10px;color:var(--accent);margin-top:8px;font-weight:600">&#x26A0; Maximum 3 tasks &mdash; locked in</div>
+          </div>
+        </div>
+      </div>
+      <div class="caption"><strong>Only three tasks per day.</strong> Fewer choices mean more completions. Two done already today.</div>
+    </div>
+    <div class="screenshot-card">
+      <div class="screenshot-mock dopamine-bg">
+        <div class="mock-content">
+          <div class="mock-db">
+            <div style="font-size:11px;font-weight:700;margin-bottom:8px;color:var(--text2)">&#x1F31F; Dopamine Log &mdash; This Week</div>
+            <div style="display:flex;gap:6px;margin-bottom:10px">
+              <div style="width:28px;height:28px;border-radius:6px;background:var(--sky);opacity:0.2;font-size:10px;display:flex;align-items:center;justify-content:center">M</div>
+              <div style="width:28px;height:28px;border-radius:6px;background:var(--sky);opacity:0.4;font-size:10px;display:flex;align-items:center;justify-content:center">T</div>
+              <div style="width:28px;height:28px;border-radius:6px;background:var(--sky);opacity:0.7;font-size:10px;display:flex;align-items:center;justify-content:center">W</div>
+              <div style="width:28px;height:28px;border-radius:6px;background:var(--sky);opacity:0.5;font-size:10px;display:flex;align-items:center;justify-content:center">T</div>
+              <div style="width:28px;height:28px;border-radius:6px;background:var(--sky);opacity:0.9;font-size:10px;display:flex;align-items:center;justify-content:center">F</div>
+            </div>
+            <p class="mock-text" style="font-size:11px">&#x1F514; 5-day streak! Your best week this month.</p>
+          </div>
+        </div>
+      </div>
+      <div class="caption"><strong>Track your momentum.</strong> Visual streaks and small wins that keep you motivated &mdash; without guilt.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="comparison">
+  <div class="section-label">Why FocusFlow</div>
+  <h2>Built Different From the Ground Up</h2>
+  <p class="sub">Most Notion templates are built for neurotypical brains and retrofitted with "ADHD-friendly" labels. FocusFlow started with ADHD research.</p>
+  <div class="table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr><th>Feature</th><th style="color:var(--accent)">FocusFlow</th><th>Generic Templates</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight"><td>Daily task limit</td><td><span class="check">3 tasks max</span></td><td><span class="cross">Unlimited (overwhelming)</span></td></tr>
+        <tr><td>Brain dump system</td><td><span class="check">Built-in, no-filter capture</span></td><td><span class="cross">Not available</span></td></tr>
+        <tr class="highlight"><td>Dopamine/motivation tracking</td><td><span class="check">Streaks + visual rewards</span></td><td><span class="cross">Not available</span></td></tr>
+        <tr><td>Guilt-free design</td><td><span class="check">No overdue labels, no red warnings</span></td><td><span class="cross">Red overdue badges, shame triggers</span></td></tr>
+        <tr class="highlight"><td>Decision reduction</td><td><span class="check">Minimal views, pre-sorted</span></td><td><span class="cross">20+ views, analysis paralysis</span></td></tr>
+        <tr><td>Color coding</td><td><span class="check">ADHD-friendly low-contrast palette</span></td><td><span class="cross">Bright, overstimulating colors</span></td></tr>
+        <tr class="highlight"><td>Setup time</td><td><span class="check">Under 5 minutes</span></td><td><span class="cross">Hours of customization</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section container" id="testimonials">
+  <div class="section-label">What Users Say</div>
+  <h2>Real Experiences From ADHD Minds</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <div class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="body">"I've tried every productivity app since 2016. Todoist, TickTick, Notion, Obsidian, paper planners... you name it. FocusFlow is the first one that didn't make me feel broken when I missed a day. The 3-task limit is genius &mdash; I'm actually finishing things."</p>
+      <p class="author">Jamie R.</p>
+      <p class="author-role">Graphic Designer, diagnosed ADHD at 31</p>
+    </div>
+    <div class="testimonial">
+      <div class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="body">"The Brain Dump alone is worth $34. I used to have 40 browser tabs open and sticky notes everywhere because I was terrified of forgetting ideas. Now I just dump everything into FocusFlow and my brain actually feels quiet. My therapist noticed the difference."</p>
+      <p class="author">Taylor M.</p>
+      <p class="author-role">Freelance Writer &amp; Content Creator</p>
+    </div>
+    <div class="testimonial">
+      <div class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="body">"The Dopamine Tracker sounds gimmicky until you use it. Seeing that little streak counter go up actually makes me want to open the app. It's the first time I've used a planning tool for more than two weeks straight. My partner is shocked."</p>
+      <p class="author">Alex K.</p>
+      <p class="author-role">Software Developer, ADHD combined type</p>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="pricing">
+  <div class="section-label">Pricing</div>
+  <h2 style="text-align:center">One Template. A Lifetime of Clarity.</h2>
+  <p class="sub" style="text-align:center;margin-left:auto;margin-right:auto">Less than the cost of one therapy copay. More effective than a stack of abandoned planners.</p>
+  <div class="pricing-card">
+    <div class="badge">30-Day Guarantee</div>
+    <div class="price"><span>$</span>34</div>
+    <div class="price-sub">One-time payment. Lifetime access + updates.</div>
+    <ul class="pricing-features">
+      <li>Complete FocusFlow Notion template</li>
+      <li>Brain Dump, Today's Focus &amp; Dopamine Tracker databases</li>
+      <li>Pre-configured views, filters &amp; relations</li>
+      <li>Quick-start video walkthrough (8 minutes)</li>
+      <li>Example content so you can start immediately</li>
+      <li>Lifetime updates &mdash; all future versions included</li>
+      <li>Bonus: "ADHD &amp; Productivity" mini-guide (PDF)</li>
+    </ul>
+    <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;font-size:16px;padding:16px">Get FocusFlow for $34 &#x2192;</a>
+    <div class="guarantee">
+      <span style="font-size:1.4rem">&#x1F6E1;</span>
+      <span><strong>30-Day Money-Back Guarantee.</strong> If FocusFlow doesn't work for your brain, you get every cent back. No questions, no guilt, no "prove you tried it." We know not every system works for every mind.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="faq">
+  <div class="section-label">FAQ</div>
+  <h2>Questions ADHD Minds Ask Before Buying</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h4>"I've tried Notion before and got overwhelmed by all the features. Will this be different?"</h4>
+      <p>FocusFlow uses only the Notion features that help &mdash; and hides everything else. You get three databases with pre-built views. No need to learn formulas, relations, or complex setups. The template is ready to use the moment you duplicate it. The quick-start video shows you everything in 8 minutes, and honestly, you probably only need the first 3.</p>
+    </div>
+    <div class="faq-item">
+      <h4>"What if I miss a day? Will it punish me with overdue tasks?"</h4>
+      <p>No. This is one of the core design principles of FocusFlow. There are zero red overdue badges, zero "you missed 3 days" warnings, zero shame. If you miss a day (or a week), you simply open it and start fresh. The Dopamine Tracker even counts "showing up" as a win &mdash; because for ADHD brains, consistency is hard and every attempt counts.</p>
+    </div>
+    <div class="faq-item">
+      <h4>"Do I need the paid version of Notion to use this?"</h4>
+      <p>No. FocusFlow works perfectly with Notion's free plan. You'll need a free Notion account, and when you purchase, you simply click "Duplicate" to add the template to your workspace. That's it. No paid Notion subscription required.</p>
+    </div>
+    <div class="faq-item">
+      <h4>"I'm not officially diagnosed with ADHD. Will this still help me?"</h4>
+      <p>Absolutely. FocusFlow was designed with ADHD research and executive dysfunction in mind, but its core principles &mdash; reducing decisions, limiting task load, celebrating small wins &mdash; help anyone who struggles with focus, motivation, or organization. Many of our users don't have a formal diagnosis. They just know their brain doesn't work like a standard-issue productivity guru's.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 style="font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;margin-bottom:16px">Stop Fighting Your Brain.<br>Start Working With It.</h2>
+    <p style="color:var(--text2);font-size:1.1rem;max-width:480px;margin:0 auto 32px">One Notion template. Three databases. Designed by and for neurodivergent minds. $34 once.</p>
+    <a href="#pricing" class="btn btn-primary" style="font-size:16px;padding:16px 40px">Get FocusFlow &#x2192;</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="../index.html">DigitalCraft Home</a>
+      <a href="landing-real-estate-ai.html">Real Estate AI</a>
+      <a href="landing-bento-portfolio.html">BentoFolio</a>
+      <a href="https://gumroad.com">Buy on Gumroad</a>
+    </div>
+    <p>DigitalCraft &copy; 2026 &middot; FocusFlow &middot; Instant Download &middot; 30-Day Guarantee</p>
+    <p style="margin-top:6px">For support: <a href="mailto:support@digitalcraft.co">support@digitalcraft.co</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
